@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyboard_text_size">25sp</dimen>
+    <dimen name="keyboard_margin">10dp</dimen>
+    <dimen name="fab_size">80dp</dimen>
+    <dimen name="keypad_textsize">25sp</dimen>
+    <dimen name="connerRad">16dp</dimen>
+</resources>

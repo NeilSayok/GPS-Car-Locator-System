@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg_4">
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_alignParentBottom="true"
+            android:elevation="16dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_white_background">
+            <TextView
+                android:id="@+id/lastSeenDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Last Seen Date: N/A"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/lastSeenTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastSeenDateTV"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Last Seen Time: N/A"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/cityTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastSeenTimeTV"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="City: N/A"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/postalCodeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cityTV"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/roboto_thin"
+                android:text="Postal Code: N/A"
+                android:textSize="20sp"/>
+        </RelativeLayout>
+</RelativeLayout>

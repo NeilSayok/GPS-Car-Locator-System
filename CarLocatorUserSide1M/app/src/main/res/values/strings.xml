@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Car Locator</string>
+    <string name="offline">Offline</string>
+    <string name="login_php_url">https://car-locator-javalab-proj.000webhostapp.com/loginA.php</string>
+    <string name="company_logo">Company Logo</string>
+    <string name="loading">Loading…</string>
+    <string name="login"><b>Login</b></string>
+    <string name="email_vehicle_id">Email/Vehicle ID</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="statUrl">https://car-locator-javalab-proj.000webhostapp.com/statusGetter.php</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="getLocation">https://car-locator-javalab-proj.000webhostapp.com/fetchLocation.php</string>
+</resources>

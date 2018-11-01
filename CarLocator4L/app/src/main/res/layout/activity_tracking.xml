@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/baseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg_2">
+    <ScrollView
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/company_logo2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/company_logo"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/justxt"
+                android:layout_below="@+id/company_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_thin"
+                android:text="@string/justtxtA"
+                android:textColor="@color/white"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"/>
+            <TextView
+                android:id="@+id/justxt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/justxt"
+                android:text="@string/jsttxtB"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                android:fontFamily="@font/roboto_thin"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/justxt2"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/timetxt"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/lat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/time"
+                android:layout_marginStart="10dp"
+                android:text="@string/longitude"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/longi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lat"
+                android:layout_marginStart="10dp"
+                android:text="@string/latitude"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/startstopTrackingService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/servicestartstopbtntxt"
+        android:background="@drawable/rect_btn_green"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/trackStartLoaderRel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transperent_white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ProgressBar
+            android:id="@+id/progressBartrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company_logo_progress"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/RedAccent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Just doing some background work..."
+                android:layout_below="@+id/progressBartrack"
+                android:textColor="@color/progressbarred"
+                android:textSize="20sp"
+                android:fontFamily="@font/roboto_thin"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
