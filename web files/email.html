@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>email</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alike">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="height:1308px;width:995px;" style="height:1308px;width:995px;">
+    <header style="background-color:#F39325;height:359px;width:999px;"><img src="https://car-locator-javalab-proj.000webhostapp.com/company_logo.png" style="display:block;margin-left:auto;margin-right:auto;width:183px;height:208px;">
+        <h1 class="text-center" style="color:rgb(255,255,255);font-family:Alike, serif;margin-top:18px;text-align:center;display:block;margin-left:auto;margin-right:auto;">Welcome ##% name %##,</h1>
+        <h2 class="text-center" style="font-family:Alike, serif;color:rgb(254,255,255);display:block;margin-left:auto;margin-right:auto;text-align:center;margin-top:18px;">Welcome! Thank you for signing up with Car Loactor App.</h2>
+    </header>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+    <p style="font-size:35px;font-family:Alike, serif;font-weight:700;margin-top:42px;margin-left:58px;color:rgb(0,0,0);">Please take a moment to verify your Car Loactor account.</p>
+    <p style="font-size:30px;font-family:Alike, serif;margin-left:58px;font-weight:700;margin-top:32px;color:#000000;">Email ID: ##% email %##</p>
+    <p style="font-size:30px;font-family:Alike, serif;margin-left:58px;font-weight:700;margin-top:34px;color:#000000;">Vehicle ID: ##% regid %##</p>
+    <p style="font-size:35px;font-family:Alike, serif;font-weight:700;text-align:center;margin-top:82px;text-decoration:underline;color:#000000;">Your verification code is:</p>
+    <p id="p1" style="font-size:90px;font-family:Alike, serif;font-weight:700;border:4px solid #000000;border-style:solid;border-radius:57px;display:inline;text-align:center;padding-left:100px;padding-right:100px;padding-bottom:20px;padding-top:20px;margin-left:227px;margin-top:21px;color:#000000;">##% otp %##</p>
+    
+    <p style="font-size:25px;font-family:Alike, serif;margin-left:58px;font-weight:600;margin-top:38px;margin-right:58px;color:#000000;">If you are having any issues with your account, please don't hesitate to contact us by replying to this mail. </p>
+    <p style="font-size:20px;font-family:Alike, serif;font-weight:500;color:rgba(2,2,2,0.55);text-align:center;margin-top:34px;">If you didn't make this request, please ignore.</p>
+    
+	<script>
+	function copyToClipboard(element) {
+	  var $temp = $("<input>");
+	  $("body").append($temp);
+	  $temp.val($(element).text()).select();
+	  document.execCommand("copy");
+	  $temp.remove();
+	}
+	</script>
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	
+	
+</body>
+
+</html>
