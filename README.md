@@ -1,8 +1,5 @@
 # Car Locator System
 
-
-
-
 Car Locator System is a internet based system that tracks your car in real time and shows its current location on the map.
 
 # Used APIS & Libraries
@@ -41,5 +38,6 @@ Open app info for both the apps and grant all the permissions for both the apps.
 ### BUGS:
 - Apps crashing when requesting permission/s.
 - Map not zooming in Car Locator app.
+- Online status is not changing in database if Car Tracker app is closed by the android system / phone is rebooted abruptly(like by removing barttery or force stopping emulator etc.)
 
 
