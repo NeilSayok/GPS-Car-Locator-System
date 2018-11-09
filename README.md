@@ -38,6 +38,8 @@ Open app info for both the apps and grant all the permissions for both the apps.
 ### Details about each and every app and web is given under their respctive folders.
 
 
-
+### BUGS:
+*Apps crashing when requesting permission/s.
+*Map not zooming in Car Locator app.
 
 
