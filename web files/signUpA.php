@@ -21,20 +21,7 @@ else{
 	$inprpsw = $_POST['rpsw'];
 
 	
-	
-	/*$inpname = "Neil Dey";
-	$inpvehId ="wb-19p-0000";
-	$inpemail = "sayokdeymajumder1998@gmail.com";
-	$inppsw = "iforgotmypassword";
-	$inprpsw = "iforgotmypassword";*/
-	
-	
-	
-	
-	
-
-	
-	
+		
 	
     if($inppsw != $inprpsw)
     {
