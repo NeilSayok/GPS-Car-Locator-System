@@ -1,9 +1,9 @@
 <?php
 
-$servername = "localhost";
-$user = "id7082910_admin";
-$password = "Mypassword1#";
-$database = "id7082910_carlocator";
+$servername = "<hostname>";
+$user = "<user name>";
+$password = "<password>";
+$database = "<database name>";
 $conn = mysqli_connect($servername,$user,$password,$database);
  
  // Check connection
