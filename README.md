@@ -40,4 +40,12 @@ Open app info for both the apps and grant all the permissions for both the apps.
 - Map not zooming in Car Locator app.
 - Online status is not changing in database if Car Tracker app is closed abruptly like when phone is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
 
+## VERY IMPORTANT:
+
+In the apps java files or string.xml where ever there is "https://car-locator-javalab-proj.000webhostapp.com/" replace it by your website name where the php files have been uploaded.
+Ex: In this repository inside "Car-Locator-System/CarLocator4L/app/src/main/res/values/strings.xml" there are links like:
+**"https://car-locator-javalab-proj.000webhostapp.com/loginA.php"**
+make it:
+**"https://your-example-site.com/loginA.php"**
+
 
