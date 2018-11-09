@@ -15,9 +15,6 @@ if ($conn->connect_error)
     $inpEmail = $_POST['email'];
     $inpPass = $_POST['password'];
     
-    //$inpEmail = 'sdmsdm1998@gmail.com';
-    //$inpPass = 'Mypassword1#';
-    
     if (isEmailPresent($inpEmail)){
         if (doesPasswordMatch($inpEmail,$inpPass)){
             $query = "SELECT `latitude`,`longitude`,`time` FROM car_location WHERE `email` = '".$inpEmail."'";
