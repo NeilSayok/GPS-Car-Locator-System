@@ -12,9 +12,7 @@ $conn = mysqli_connect($servername,$user,$password,$database);
     }
     $otp = $_POST['otp_conf'];
     $email = $_POST['email'];
-    
-    //$otp = "901330";
-    //$email = "sdmsdm1998@gmail.com";
+
     
     
     $query = "SELECT otp FROM `OTP` WHERE email = '".$email."'";
