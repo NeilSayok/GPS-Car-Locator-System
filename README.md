@@ -38,6 +38,6 @@ Open app info for both the apps and grant all the permissions for both the apps.
 ### BUGS:
 - Apps crashing when requesting permission/s.
 - Map not zooming in Car Locator app.
-- Online status is not changing in database if Car Tracker app is closed by the android system / phone is rebooted abruptly(like by removing barttery or force stopping emulator etc.)
+- Online status is not changing in database if Car Tracker app is closed abruptly like when phone is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
 
 
