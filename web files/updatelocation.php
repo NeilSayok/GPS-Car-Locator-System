@@ -1,9 +1,8 @@
 <?php
-
-$servername = "localhost";
-$user = "id7082910_admin";
-$password = "Mypassword1#";
-$database = "id7082910_carlocator";
+$servername = "<hostname>";
+$user = "<user name>";
+$password = "<password>";
+$database = "<database name>";
 $conn = mysqli_connect($servername,$user,$password,$database);
 
 
@@ -18,10 +17,7 @@ if ($conn->connect_error)
     $inptime = $_POST['time'];
     
     
-    /*$inpemail = "sayokdeymajumder1998@gmail.com";
-    $inplat = "qqqqqq";
-    $inplong = "wwwwww";
-    $inptime = "ttttt";*/
+ 
     
     if (!isEmailPresent($inpemail)){
         echo "Error";
