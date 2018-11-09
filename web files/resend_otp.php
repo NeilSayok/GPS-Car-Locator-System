@@ -13,7 +13,6 @@ if ($conn->connect_error) {
 
     $variable = array();
     $variable['email'] = $_POST['email'];
-    //$variable['email'] = "sdmsdm1998@gmail.com";
     $variable['name'] = "";
     $variable['otp'] = "";
     $variable['reg_id'] = "";
@@ -33,9 +32,7 @@ if ($conn->connect_error) {
         $query = "UPDATE `OTP` SET `otp` = '".$otp."' WHERE `OTP`.`email` = '".$email."'";
         
         mysqli_query($conn,$query);
-        //echo "Success<br>";
-        
-        //echo $email."<br>".$name."<br>".$otp;
+
     
 
     $subject = "User Verification";
@@ -55,7 +52,7 @@ if ($conn->connect_error) {
         echo "Mail_Sent.";
     else
         echo "Main_Not_Sent";
-    //echo $template;
+
 
 }
 
@@ -65,11 +62,10 @@ function getOTP($email){
     $query = "SELECT otp from OTP where email = '".$email."'";
     if ($sql = mysqli_query($GLOBALS['conn'],$query)){
         $row = mysqli_fetch_array($sql);
-        //echo mysqli_num_rows($sql)."<br>";
-        //echo $row['otp']."<br>";
+
         return $row['otp'];
     }
-    //echo "Querry not success from getOTP<br>";
+ 
     return "<br>";
 }
 
