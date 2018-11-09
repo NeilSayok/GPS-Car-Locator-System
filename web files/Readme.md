@@ -1,7 +1,7 @@
 # Car Locator System
 #### Web and Server Side
 
-##### All the php files contain the lines:
+##### All the php files contain the lines
 ```sh
 $servername = "<hostname>";
 $user = "<user name>";
