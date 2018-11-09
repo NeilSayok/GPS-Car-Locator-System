@@ -14,12 +14,8 @@ if ($conn->connect_error)
     $inpemail = $_POST['email'];
     $inppsw = $_POST['psw'];
 
-    //$inpemail = 'sdmsdm1998@gmail.com';
-    //$inppsw = 'Mypassword1#';
-    
     $query = "SELECT * FROM `car_location` WHERE `email` = '".$inpemail."' OR `reg_id` = '".$inpemail."'";
-    
-    
+
     if($result = mysqli_query($conn,$query)){
         $row = mysqli_fetch_array($result);
         
