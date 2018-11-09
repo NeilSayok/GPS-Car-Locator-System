@@ -27,6 +27,6 @@ $database = "<database name>";
 **OTP Table and its columns and datatypes**
 ![otptable](https://i.pinimg.com/originals/77/12/80/771280e962952cf2ad528b7a764f0980.png)
 
-**'id' feild in each table make it auto increment.**
+**'id' feild in each table make it auto increment and primary key.**
 
 #### The table names and column names has to be exactly same or you will have to change everything in the php files.
