@@ -4,4 +4,4 @@ This app checks the location of the car and shows its location and last update t
 
 **For this app you will need a google map api key, which you need to place in CarLocatorUserSide1M/app/src/debug/res/values/google_maps_api.xml inside**
 
-```sh<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR GOOGLE MAPS API KEY HERE</string>```
+```sh <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR GOOGLE MAPS API KEY HERE</string>```
