@@ -51,7 +51,7 @@ make it:
 ### BUGS:
 - Apps crashing when requesting permission/s.(Temporary fix: Accept the permissions by going to settings>apps>Car Tracker/Car Locator>Permissions>Switch on all permissions)
 - Map not zooming in Car Locator app.
-- Online status is not changing in database if Car Tracker app is closed abruptly like when phone is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
+- Online status is not changing in database if Car Tracker app is closed abruptly like when phone/emulator is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
 
 
 
