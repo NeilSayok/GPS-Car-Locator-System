@@ -13,9 +13,7 @@ if ($conn->connect_error)
 }else{
     $inpemail = $_POST['email'];
     $inplogstat = $_POST['stat'];
-    
-    /*$inpemail = "sdmsdm1998@gmail.com";
-    $inplogstat = '0';*/
+
     
     $sql = "UPDATE car_location SET `log_stat` = '".$inplogstat."' WHERE `email` = '".$inpemail."'";
     
