@@ -46,6 +46,8 @@ make it:
 
 **"https://your-example-site.com/loginA.php"**
 
+#### Dont forget to search in the java files too 😋.
+
 ### BUGS:
 - Apps crashing when requesting permission/s.
 - Map not zooming in Car Locator app.
