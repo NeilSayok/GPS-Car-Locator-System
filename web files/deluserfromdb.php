@@ -14,9 +14,6 @@ if ($conn->connect_error)
     
     $inpemail = $_POST['email'];
     
-    //$inpemail = "sdmsdm1998@gmail.com";
-    
-    
     $sql = "DELETE FROM `car_location` WHERE `car_location`.`email` = '".$inpemail."'";
     
     $result = mysqli_query($conn,$sql);
