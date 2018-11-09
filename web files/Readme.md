@@ -8,10 +8,10 @@ $user = "<user name>";
 $password = "<password>";
 $database = "<database name>";
 ```
-**<hostname>** has to be replaced with the hostname provided by your server.
-**<user name>** has to be replaced with the username of the database provided by your server.
-**<password>** has to be replaced with the database login password provided by your server.
-**<database name>** has to be replaced with the database name provided by your server.
+**hostname** has to be replaced with the hostname provided by your server.
+**user name** has to be replaced with the username of the database provided by your server.
+**password** has to be replaced with the database login password provided by your server.
+**database name** has to be replaced with the database name provided by your server.
 
 ###### For 000webhost these can be found under website > manage database (password has to be set while creating the database.)
 
