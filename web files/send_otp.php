@@ -11,9 +11,6 @@ if ($conn->connect_error) {
 }else{
      $variable = array();
     $variable['email'] = $_POST['email'];
-    //$variable['email'] = "sdmsdm1998@gmail.com";
-   //$variable['email'] = "sayokdeymajumder1998@gmail.com";
-   // $variable['number']="8420316576";
     $variable['name'] = "";
     $variable['otp'] = "";
     $variable['reg_id'] = "";
@@ -44,7 +41,7 @@ if ($conn->connect_error) {
     }
 
     $subject = "User Verification";
-    $from = "promodbaghla@gmail.com";
+    $from = "Someemail@someserver.domain";
     $headers = "MIME-Version: 1.0" . "\n";
     $headers .= "Content-type:text/html;charset=UTF-8" . "\n"; 
     $template = file_get_contents("email.html");
@@ -53,16 +50,7 @@ if ($conn->connect_error) {
     $template = str_replace('##% otp %##',$variable['otp'],$template);
     $template = str_replace('##% email %##',$variable['email'],$template);
     $template = str_replace('##% regid %##',$variable['reg_id'],$template);
-    
-   // echo $variable['name']."/".$variable['otp']."/".$variable['email']."/".$variable['reg_id'];
-    
-    
-   /*$template = file_get_contents("sms.php");
-    ##% regid %##
-    $template = str_replace('##% name %##',$variable['name'],$template);
-    $template = str_replace('##% otp %##',$variable['otp'],$template);
-    $template = str_replace('##% email %##',$variable['number'],$template);
-    */
+   
     
     if(mail($variable['email'],$subject,$template,$headers))
         echo "Mail_Sent"; 
