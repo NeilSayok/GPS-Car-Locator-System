@@ -14,9 +14,7 @@ if ($conn->connect_error)
     
     $inpemail = $_POST['email'];
     $inpvehid = $_POST['vehid'];
-    
-    //$inpemail = "";
-    //$inpvehid = "";
+  
     
     $querry = "SELECT `name`,`email`,`reg_id`,`password`,`verified` FROM car_location WHERE `email` = '".$inpemail."' OR `reg_id` = '".$inpvehid."'";
     
