@@ -6,4 +6,4 @@ This app checks the location of the car and shows its location and last update t
 
 ``` <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">YOUR GOOGLE MAPS API KEY HERE</string>```
 
-Follow the instructions written in the file to get the api key or follow this [youtube link](https://www.youtube.com/playlist?list=PLgCYzUzKIBE-vInwQhGSdnbyJ62nixHCt) at least watch the first three videos.
+Follow the instructions written in the file to get the api key or follow this [youtube link](https://www.youtube.com/playlist?list=PLgCYzUzKIBE-vInwQhGSdnbyJ62nixHCt) to know how to get the api key (watch the first three videos).
