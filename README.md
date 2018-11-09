@@ -2,13 +2,6 @@
 
 Car Locator System is a internet based system that tracks your car in real time and shows its current location on the map.
 
-### Used APIs & Libraries
-  - Google Maps Api
-  - Volley Networking Library (for Android)
-  - CircleImageView (https://github.com/hdodenhof/CircleImageView)
-  - PinView (https://github.com/ChaosLeong/PinView)
-
-
 ### Tech
 
 This Project uses:
@@ -21,6 +14,13 @@ This Project uses:
 * [html](https://www.w3schools.com/html/) - For designing email containing otp.
 
 
+### Used APIs & Libraries
+  - Google Maps Api
+  - Volley Networking Library (for Android)
+  - CircleImageView (https://github.com/hdodenhof/CircleImageView)
+  - PinView (https://github.com/ChaosLeong/PinView)
+
+ 
 ### Installation
 
 To install the Car Tracker app copy the "Car Tracker.apk" under CarLocator4L folder to your phone storage and install it.
