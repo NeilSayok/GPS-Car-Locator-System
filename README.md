@@ -32,11 +32,11 @@ Open app info for both the apps and grant all the permissions for both the apps.
 
 
 
-### Details about each and every app and web is given under their respctive folders.
+### Details about each app and web is given under their respctive folders.
 
 ## VERY IMPORTANT:
 
-In the apps java files or string.xml where ever there is "https://car-locator-javalab-proj.000webhostapp.com/" replace it by your website name where the php files have been uploaded.
+In the apps java files or string.xml wherever there is "https://car-locator-javalab-proj.000webhostapp.com/" replace it by your website name where the php files have been uploaded.
 
 Ex: In this repository inside "Car-Locator-System/CarLocator4L/app/src/main/res/values/strings.xml" there are links like:
 
