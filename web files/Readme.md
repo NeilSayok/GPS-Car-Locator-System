@@ -16,6 +16,8 @@ $database = "<database name>";
 
 **database name** has to be replaced with the database name provided by your server.
 
+Also remove the <>.
+
 
 ###### For 000webhost these can be found under website > manage database (password has to be set while creating the database.)
 
