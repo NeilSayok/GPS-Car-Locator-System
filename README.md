@@ -32,13 +32,7 @@ Open app info for both the apps and grant all the permissions for both the apps.
 
 
 
-### __Details about each and every app and web is given under their respctive folders.__
-
-
-### BUGS:
-- Apps crashing when requesting permission/s.
-- Map not zooming in Car Locator app.
-- Online status is not changing in database if Car Tracker app is closed abruptly like when phone is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
+### Details about each and every app and web is given under their respctive folders.
 
 ## VERY IMPORTANT:
 
@@ -51,6 +45,13 @@ Ex: In this repository inside "Car-Locator-System/CarLocator4L/app/src/main/res/
 make it:
 
 **"https://your-example-site.com/loginA.php"**
+
+### BUGS:
+- Apps crashing when requesting permission/s.
+- Map not zooming in Car Locator app.
+- Online status is not changing in database if Car Tracker app is closed abruptly like when phone is rebooted not in proper way (like by removing barttery or force stopping emulator etc.)
+
+
 
 
 
