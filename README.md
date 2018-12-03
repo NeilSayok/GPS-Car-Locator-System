@@ -23,9 +23,11 @@ This Project uses:
  
 ### Installation
 
-To install the Car Tracker app copy the "Car Tracker.apk" under CarLocator4L folder to your phone storage and install it.
+Extract the Apps.rar and copy the files to a device.
 
-To install the Car Locator app copy the "Car Locator.apk" under CarLocatorUserSide1M folder to your phone storage and install it.
+To install the Car Tracker app copy the "Car Tracker.apk" to your phone storage and install it.
+
+To install the Car Locator app copy the "Car Locator.apk" to your phone storage and install it.
 
 Open app info for both the apps and grant all the permissions for both the apps. 
 
