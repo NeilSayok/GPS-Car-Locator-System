@@ -1,18 +1,15 @@
 <?php
 
-$servername = "localhost";
-$user = "id7082910_admin";
-$password = "Mypassword1#";
-$database = "id7082910_carlocator";
-$conn = mysqli_connect($servername, $user, $password, $database);
+require_once 'connection.php';
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
- // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/Exception.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/PHPMailer.php';
+require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
+
     $variable = array();
-    //$variable['email'] = $_POST['email'];
-    $variable['email'] = "sdmsdm1998@gmail.com";
+    $variable['email'] = $_POST['email'];
     $variable['name'] = "";
     $variable['otp'] = "";
     $variable['reg_id'] = "";
@@ -37,10 +34,6 @@ if ($conn->connect_error) {
     //echo $email."<br>".$name."<br>".$otp;
 
 
-    $subject = "User Verification";
-    $from = "promodbaghla@gmail.com";
-    $headers = "MIME-Version: 1.0" . "\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\n";
     $template = file_get_contents("email.html");
 
     $template = str_replace('##% name %##', $variable['name'], $template);
@@ -48,15 +41,28 @@ if ($conn->connect_error) {
     $template = str_replace('##% email %##', $variable['email'], $template);
     $template = str_replace('##% regid %##', $variable['reg_id'], $template);
 
+    $mail = new PHPMailer;
+    $mail->isSMTP();
+    $mail->SMTPDebug = 0; // 0 = off (for production use) - 1 = client messages - 2 = client and server messages
+    $mail->Host = "smtp.gmail.com"; // use $mail->Host = gethostbyname('smtp.gmail.com'); // if your network does not support SMTP over IPv6
+    $mail->Port = 587; // TLS only
+    $mail->SMTPSecure = 'tls'; // ssl is deprecated
+    $mail->SMTPAuth = true;
+    $mail->Username = 'projecttravel1995@gmail.com'; // email
+    $mail->Password = 'projectSL123'; // password
+    $mail->setFrom('otp@projecttraveluniversity.000webhostapp.com', 'Project Travel System'); // From email and name
+    $mail->addAddress($variable['email'], $variable['name']); // to email and name
+    $mail->Subject = 'Registration OTP (Do not share!)';
+    $mail->msgHTML($template); //$mail->msgHTML(file_get_contents('contents.html'), __DIR__); //Read an HTML message body from an external file, convert referenced images to embedded,
+    $mail->AltBody = 'Your OTP is '.$variable['otp']; // If html emails is not supported by the receiver, show this body
+    // $mail->addAttachment('images/phpmailer_mini.png'); //Attach an image file
 
-
-    if (mail($variable['email'], $subject, $template, $headers)) {
-        echo "Mail_Sent.";
+    if (!$mail->send()) {
+        //echo "Mailer Error: " . $mail->ErrorInfo;
+        echo "Mail_not_sent";
     } else {
-        echo "Main_Not_Sent";
+        echo "Mail_Sent";
     }
-    //echo $template;
-}
 
 
 
