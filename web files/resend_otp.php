@@ -1,3 +1,9 @@
+// DO not forget to put your email id and password in line 54 and 55.
+//
+//$mail->Username = '<Your Email ID>'; // email
+//$mail->Password = '<Your email Password>'; // password
+
+
 <?php
 
 require_once 'connection.php';
@@ -48,8 +54,8 @@ require $_SERVER['DOCUMENT_ROOT'] . '/mail/SMTP.php';
     $mail->Port = 587; // TLS only
     $mail->SMTPSecure = 'tls'; // ssl is deprecated
     $mail->SMTPAuth = true;
-    $mail->Username = 'projecttravel1995@gmail.com'; // email
-    $mail->Password = 'projectSL123'; // password
+    $mail->Username = '<Your Email ID>'; // email
+    $mail->Password = '<Your email Password>'; // password
     $mail->setFrom('otp@projecttraveluniversity.000webhostapp.com', 'Project Travel System'); // From email and name
     $mail->addAddress($variable['email'], $variable['name']); // to email and name
     $mail->Subject = 'Registration OTP (Do not share!)';
